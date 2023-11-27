@@ -1,14 +1,14 @@
 ## Demos from k6 Office Hours #47 (March 25, 2022)
 
-[!NOTE]
-These instructions have been updated as of k6 version 0.47.0 (fall 2023). 
-Updates to k6 and highlighted extensions may have changed the workflow shown in the video demonstration.
-The following instructions should supersede those from the video.
+> [!NOTE]
+> These instructions have been updated as of k6 version 0.47.0 (fall 2023).
+> Updates to k6 and highlighted extensions may have changed the workflow shown in the video demonstration.
+> The following instructions should supersede those from the video.
 
 ### Running the `xk6-dashboard` natively
 
-[!NOTE]
-The `xk6-dashboard` extension was transferred to the Grafana organization!
+> [!NOTE]
+> The `xk6-dashboard` extension was transferred to the Grafana organization!
 
 * Generate a k6 binary with the [grafana/xk6-dashboard](https://github.com/szkiba/xk6-dashboard) extension
     ```shell
@@ -63,9 +63,9 @@ The `xk6-dashboard` extension was transferred to the Grafana organization!
 
 ### Running the `xk6-output-prometheus-remote` extension within Docker
 
-[!IMPORTANT]
-The `xk6-output-prometheus-remote` extension is now built into the native k6 binary as an experimental extension.
-This removes the need to specially compile the extension, but does change some of the usage.
+> [!IMPORTANT]
+> The `xk6-output-prometheus-remote` extension is now built into the native k6 binary as an experimental extension.
+> This removes the need to specially compile the extension, but does change some of the usage.
 
 * Start our _Grafana_ service backed by _Prometheus_
     ```shell
