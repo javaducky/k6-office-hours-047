@@ -24,7 +24,7 @@ TAG_NAME="$(basename -s .js $SCRIPT_NAME)-$(date +%s)"
 # Anything after the $IMAGE_NAME are passed along for the k6 binary.
 docker run -v $PWD:/scripts -it --rm \
     --network="prometheus_k6" \
-    -e K6_OUT=output-prometheus-remote \
-    -e K6_PROMETHEUS_REMOTE_URL=http://prometheus:9090/api/v1/write \
+    -e K6_OUT=experimental-prometheus-rw \
+    -e K6_PROMETHEUS_RW_SERVER_URL=http://prometheus:9090/api/v1/write \
      $IMAGE_NAME \
     run /scripts/$SCRIPT_NAME --tag testid=$TAG_NAME
