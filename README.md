@@ -8,9 +8,9 @@
 ### Running the `xk6-dashboard` natively
 
 > [!NOTE]
-> The `xk6-dashboard` extension was transferred to the Grafana organization!
+> The `xk6-dashboard` extension was transferred to the Grafana organization thanks to @szkiba!
 
-* Generate a k6 binary with the [grafana/xk6-dashboard](https://github.com/szkiba/xk6-dashboard) extension
+* Generate a k6 binary with the [grafana/xk6-dashboard](https://github.com/grafana/xk6-dashboard) extension
     ```shell
     go install go.k6.io/xk6/cmd/xk6@latest
     xk6 build --with github.com/grafana/xk6-dashboard@latest
